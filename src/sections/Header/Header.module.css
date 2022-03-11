@@ -1,0 +1,86 @@
+.sect {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url('https://thegimun.org/wp-content/uploads/2019/02/29-1.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  max-width: 650px;
+  margin: 60px 100px;
+}
+
+.text {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 2px;
+  line-height: 65px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.button {
+  padding: 10px 20px;
+  color: #000;
+  border: 2px solid #000;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttonText {
+  position: relative;
+  z-index: 2;
+}
+
+.button:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ffffff;
+  transition: all 0.35s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover:after {
+  width: 100%;
+}
+
+@media (max-width: 538px) {
+  .text {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .text {
+    font-size: 2.25rem;
+    line-height: 3.5rem;
+    padding-bottom: 130px;
+  }
+
+  .button {
+    padding: 7px 15px;
+    color: white;
+    border-color: white;
+  }
+
+  .button:after {
+    display: none;
+  }
+}

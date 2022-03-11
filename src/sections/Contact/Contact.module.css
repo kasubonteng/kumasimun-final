@@ -1,0 +1,151 @@
+.div {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  gap: 50px;
+  margin-top: 70px;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 100px;
+}
+
+.wrapper::after {
+  position: absolute;
+  content: '';
+  width: 200px;
+  height: 50%;
+  background-color: var(--gray-1);
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.left {
+  width: 100%;
+  max-width: 500px;
+}
+
+.right {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.form {
+  width: 100%;
+}
+
+.formGroup {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 15px;
+}
+
+.input {
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  color: black;
+  background-color: white;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.input:active,
+.input:focus {
+  color: black;
+  background-color: white;
+  border: 1px solid #3f90df;
+}
+
+.textarea {
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  color: black;
+  background-color: white;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-top: 8px;
+  min-height: 200px;
+  resize: vertical;
+}
+
+.textarea:active,
+.textarea:focus {
+  color: black;
+  background-color: white;
+  border: 1px solid #3f90df;
+}
+
+.button[type='submit'] {
+  background-color: #3f90df;
+  color: white;
+  font-size: 13px;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.iconStyles {
+  padding: 15px;
+  background-color: #3f90df;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.icon {
+  color: white;
+  padding: 13px;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  color: white;
+}
+
+@media (max-width: 495px) {
+  .icon {
+    padding: 10px;
+    font-size: 10px;
+  }
+  .iconStyles {
+    padding: 10px;
+  }
+  .text {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .wrapper::after {
+    display: none;
+  }
+  .left,
+  .right {
+    max-width: 100%;
+  }
+  .right {
+    padding: 4rem 2rem 2rem 2rem;
+  }
+}

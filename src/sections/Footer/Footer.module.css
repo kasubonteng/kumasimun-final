@@ -1,0 +1,32 @@
+.wrapper {
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+  background-color: #ffffff;
+}
+
+.icons {
+  display: flex;
+  font-size: 2rem;
+  padding: 2rem 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  margin-right: 3rem;
+}
+
+.linkItem:hover {
+  color: #3f90df;
+}
+
+.copyrightText {
+  display: flex;
+  font-weight: 300;
+  font-size: 0.85rem;
+  color: #cccccc;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
