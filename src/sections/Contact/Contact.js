@@ -18,7 +18,7 @@ const Contact = () => {
         <PageTitle subheading="Get In Touch" heading="Contact" />
         <div className={styles.wrapper}>
           <div className={styles.left}>
-            <ContactItem icon={faPhone} text="+233(0) 000 000 0000" />
+            <ContactItem icon={faPhone} text="+233(0) 24 613 4930" />
             <ContactItem icon={faEnvelope} text="kumasimun@gmail.com" />
             <ContactItem icon={faLocationDot} text="Kumasi, Ghana" />
           </div>

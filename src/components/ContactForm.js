@@ -1,13 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import styles from '../sections/Contact/Contact.module.css';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
   const [name, setName] = useState(' ');
   const [email, setEmail] = useState(' ');
   const [message, setMessage] = useState(' ');
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_9sd7nvg',
+        'template_26je0y4',
+        form.current,
+        '0_XYGXOBpi9o6vTCt'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <div>
-      <form className={styles.form}>
+      <form className={styles.form} onSubmit={(e) => sendEmail(e)}>
         <div className={styles.formGroup}>
           <label htmlFor="name" className={styles.label}>
             Your Name{' '}
@@ -47,9 +72,7 @@ const ContactForm = () => {
             />
           </label>
         </div>
-        <button className={styles.button} type="submit">
-          Send
-        </button>
+        <input className={styles.button} type="submit" value="Send" />
       </form>
     </div>
   );

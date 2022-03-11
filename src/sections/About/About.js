@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './About.module.css';
+import { Link } from 'react-scroll';
 
 import PageTitle from '../../components/PageTitle';
 
@@ -29,7 +30,17 @@ const About = () => {
           <br />
           <p className="py-4">
             For enquiries and any issue, reach the KIMUN secretariat on
-            <span> +233246134930</span>, and on our various social media pages.
+            <span className="italic"> +233 (0) 24 613 4930</span>, and on{' '}
+            <Link
+              to="footer"
+              spy={true}
+              smooth={true}
+              offset={30}
+              duration={500}
+              className="underline"
+            >
+              our various social media pages.
+            </Link>
           </p>
         </div>
       </div>

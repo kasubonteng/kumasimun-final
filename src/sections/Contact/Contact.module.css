@@ -149,3 +149,20 @@
     padding: 4rem 2rem 2rem 2rem;
   }
 }
+
+@media (max-width: 532px) {
+  .wrapper {
+    padding: 0 70px;
+  }
+
+  .right {
+    padding: 4rem 1rem 2rem;
+  }
+
+  .input {
+    padding: 6px;
+  }
+  .textarea {
+    padding: 6px;
+  }
+}

@@ -8,3 +8,9 @@
   font-size: 17px;
   padding: 100px;
 }
+
+@media (max-width: 538px) {
+  .paragraph {
+    padding: 60px;
+  }
+}

@@ -12,7 +12,7 @@ const Footer = () => {
   let today = new Date();
   let year = today.getFullYear();
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="footer">
       <div className={styles.icons}>
         <a
           href="https://www.instagram.com/accounts/login/"
