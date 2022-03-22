@@ -1,0 +1,16 @@
+.container {
+  padding: 10px;
+  min-height: 80vh;
+  letter-spacing: 1px;
+}
+
+.paragraph {
+  font-size: 17px;
+  padding: 100px;
+}
+
+@media (max-width: 538px) {
+  .paragraph {
+    padding: 60px;
+  }
+}

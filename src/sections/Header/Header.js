@@ -15,7 +15,7 @@ const Header = () => {
           <div>
             <Link
               activeClass="active"
-              to={'about'}
+              to={'welcome '}
               spy={true}
               smooth={true}
               offset={-70}

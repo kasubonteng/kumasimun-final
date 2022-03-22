@@ -5,9 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const menuItems = [
+  // {
+  //   path: 'home',
+  //   label: 'Home',
+  // },
   {
-    path: 'home',
-    label: 'Home',
+    path: 'whoweare',
+    label: 'Who We Are',
   },
   {
     path: 'about',

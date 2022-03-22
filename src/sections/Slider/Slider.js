@@ -20,6 +20,7 @@ export default function Slider() {
     } else if (slideIndex === 1) {
       setSlideIndex(dataSlider.length);
     }
+    console.log(slideIndex);
   };
 
   return (

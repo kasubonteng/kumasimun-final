@@ -2,8 +2,10 @@ import SEO from './components/SEO';
 import Navbar from './components/Navbar';
 import ScrollToTop from 'react-scroll-to-top';
 import Header from './sections/Header/Header';
-import About from './sections/About/About';
+import Welcome from './sections/Welcome/Welcome';
+import WhoWeAre from './sections/About/WhoWeAre';
 import Quotes from './sections/Quotes/Quotes';
+import About from './sections/About/About';
 import Secretariat from './sections/Secretariat/Secretariat';
 import Apply from './sections/Apply/Apply';
 import Contact from './sections/Contact/Contact';
@@ -16,8 +18,10 @@ function App() {
       <ScrollToTop smooth />
       <Navbar />
       <Header />
-      <About />
+      <Welcome />
+      <WhoWeAre />
       <Quotes />
+      <About />
       <Secretariat />
       <Apply />
       <Contact />
