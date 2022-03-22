@@ -1,11 +1,11 @@
 import React from 'react';
 
-import PageTitle from '../../components/PageTitle';
+// import PageTitle from '../../components/PageTitle';
 
-import styles from './Secretariat.module.css';
-import data from './Secretariat.data';
-import SecretariatCard from '../../components/SecretariatCard';
-import Sec from './SecretariatPage';
+// import styles from './Secretariat.module.css';
+// import data from './Secretariat.data';
+// import SecretariatCard from '../../components/SecretariatCard';
+import Sec from './NewSecretariat';
 
 const Secretariat = () => {
   const images = [
@@ -22,7 +22,7 @@ const Secretariat = () => {
 
   return (
     <>
-      <div id="secretariat">
+      {/* <div id="secretariat">
         <PageTitle subheading="" heading="Secretariat" />
         <div className={styles.main}>
           {data.map((item, i) => (
@@ -34,8 +34,8 @@ const Secretariat = () => {
             />
           ))}
         </div>
-      </div>
-      {/* <Sec /> */}
+      </div> */}
+      <Sec />
     </>
   );
 };

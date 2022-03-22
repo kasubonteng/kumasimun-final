@@ -6,7 +6,7 @@ import Welcome from './sections/Welcome/Welcome';
 import WhoWeAre from './sections/About/WhoWeAre';
 import Quotes from './sections/Quotes/Quotes';
 import About from './sections/About/About';
-import Secretariat from './sections/Secretariat/Secretariat';
+import Secretariat from './sections/Secretariat/NewSecretariat';
 import Apply from './sections/Apply/Apply';
 import Contact from './sections/Contact/Contact';
 import Footer from './sections/Footer/Footer';

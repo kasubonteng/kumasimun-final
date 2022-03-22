@@ -7,8 +7,6 @@
   justify-content: flex-start;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
     url('../../../public/backgroungImage.jpeg') no-repeat;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-    url('https://thegimun.org/wp-content/uploads/2019/02/29-1.jpg') no-repeat; */
   background-size: cover;
   background-position: center;
 }
@@ -59,21 +57,7 @@
   cursor: pointer;
 }
 
-.buttonText:after {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  z-index: 3;
-  color: black;
-}
-
 .button:hover:after {
-  width: 100%;
-}
-.buttonText:hover:after {
   width: 100%;
 }
 
@@ -96,8 +80,6 @@
 
   .button {
     padding: 7px 15px;
-    color: black;
-    border-color: black;
   }
 
   .button:after {

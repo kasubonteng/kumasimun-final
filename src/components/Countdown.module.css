@@ -1,0 +1,69 @@
+.container {
+  background: #3f90df;
+  padding: 100px 0;
+}
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 50px;
+  color: #fff;
+}
+
+.day,
+.hour,
+.minute,
+.second {
+  font-size: 3rem;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px 20px;
+  color: #000;
+  border: 2px solid #fff;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttonText {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.button:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: transparent;
+  transition: all 0.35s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover:after {
+  width: 100%;
+}
+
+@media (max-width: 400px) {
+  .button {
+    padding: 7px 15px;
+  }
+
+  .button:after {
+    display: none;
+  }
+}
