@@ -5,6 +5,7 @@ const SEO = () => {
   return (
     <Helmet>
       <title>KUMASI MUN</title>
+      <link rel="canonical" href="https://www.kumasimun.com/" />
       <meta
         name="description"
         content="International Model United Nations Conference Held In Kumasi Ghana"
