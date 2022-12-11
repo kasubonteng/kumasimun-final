@@ -15,7 +15,7 @@ const Footer = () => {
     <div className={styles.wrapper} id="footer">
       <div className={styles.icons}>
         <a
-          href="https://www.instagram.com/accounts/login/"
+          href="https://web.facebook.com/KIMUN.GLOBAL/?paipv=0&eav=AfY57DX1YpnKu9GDh2zjFwWcWUpdSBbkqrpKuTWNlDeiL0v1ZjMIaYZd1GrxFEwOpzg&_rdc=1&_rdr"
           target="_blank"
           rel="noreferrer"
           className={styles.link}
@@ -31,7 +31,7 @@ const Footer = () => {
           <FontAwesomeIcon className={styles.linkItem} icon={faTwitter} />
         </a>
         <a
-          href="https://www.instagram.com/accounts/login/"
+          href="https://www.instagram.com/kumasimun/?hl=en"
           target="_blank"
           rel="noreferrer"
         >
