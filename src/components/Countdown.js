@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from './Countdown.module.css';
+import styles from './componentStyles/Countdown.module.css';
 import { Link } from 'react-scroll';
 
 const Countdown = () => {

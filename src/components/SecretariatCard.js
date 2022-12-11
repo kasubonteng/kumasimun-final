@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './SecretariatCardStyles.module.css';
+import styles from './componentStyles/SecretariatCardStyles.module.css';
 
 const SecretariatCard = ({ image, name, position }) => {
   return (

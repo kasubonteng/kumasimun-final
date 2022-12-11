@@ -6,11 +6,13 @@ import Gallery from '../sections/Gallery/Gallery';
 
 const gallery = () => {
   return (
-    <div className="mb-24">
+    <div>
       <Navbar />
-      <PageTitle subheading="" heading="Gallery" />
-      {/* <Slider /> */}
-      <Gallery />
+      <div className="mt-10">
+        <PageTitle subheading="" heading="Gallery" />
+        {/* <Slider /> */}
+        <Gallery />
+      </div>
     </div>
   );
 };
