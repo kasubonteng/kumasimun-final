@@ -167,11 +167,9 @@
 
 .applyButton {
   padding: 10px 20px;
-  /* color: #000; */
   border: 2px solid #000;
   letter-spacing: 2px;
   text-align: center;
-  position: relative;
   transition: all 0.35s;
   border-radius: 5px;
   cursor: pointer;

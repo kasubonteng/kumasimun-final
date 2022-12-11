@@ -17,15 +17,17 @@ function App() {
       <SEO />
       <ScrollToTop smooth />
       <Navbar />
-      <Header />
-      <Welcome />
-      <WhoWeAre />
-      <Quotes />
-      <About />
-      <Secretariat />
-      <Apply />
-      <Contact />
-      <Footer />
+      <>
+        <Header />
+        <Welcome />
+        <WhoWeAre />
+        <Quotes />
+        <About />
+        <Secretariat />
+        <Apply />
+        <Contact />
+        <Footer />
+      </>
     </>
   );
 }

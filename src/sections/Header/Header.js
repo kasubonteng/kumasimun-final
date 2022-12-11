@@ -8,10 +8,10 @@ const Header = () => {
     <section id="home" className={styles.sect}>
       <div className={styles.content}>
         <div>
-          <h2 className={styles.text}>
+          <h1 className={styles.text}>
             Kumasi <br /> International <br /> Model <br /> United <br />
             Nations
-          </h2>
+          </h1>
           <div>
             <Link
               activeClass="active"

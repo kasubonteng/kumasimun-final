@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Welcome.module.css';
 import PageTitle from '../../components/PageTitle';
-import Countdown from '../../components/Countdown';
+// import Countdown from '../../components/Countdown';
 
 const Welcome = () => {
   return (
@@ -63,7 +63,7 @@ const Welcome = () => {
           </div>
         </div>
       </div>
-      <Countdown />
+      {/* <Countdown /> */}
     </>
   );
 };

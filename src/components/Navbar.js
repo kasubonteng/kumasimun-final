@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const menuItems = [
-  // {
-  //   path: 'home',
-  //   label: 'Home',
-  // },
+  {
+    path: 'home',
+    label: 'Home',
+  },
   {
     path: 'whoweare',
     label: 'Who We Are',
@@ -36,8 +36,9 @@ const menuItems = [
 ];
 
 const styles = {
+  main: ' fixed w-full z-80 top-0',
   header:
-    'relative fixed z-80 top-0 w-full px-[100px] py-[20px] flex justify-between items-center bg-white',
+    'relative px-[100px] py-[20px] flex justify-between items-center bg-white border-solid border-b-2 border-black',
   logo: 'relative text-[30px] font-extrabold tracking-[1px]',
   link: "m-1 cursor-pointer my-[4px] mx-4 font-medium tracking-[1px] md:hidden relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[2px] after:bottom-0 after:left-0 after:bg-black after:origin-bottom-left after:ease-out after:duration-[25] after:transition-[transform] hover:after:scale-x-[1] ",
   burgerLink:
@@ -45,7 +46,7 @@ const styles = {
   input: 'z-10',
   label: 'hidden md:block md:cursor-pointer md:text-[25px] md:z-30',
   sidebar:
-    'md:inset-0 md:flex md:flex-col md:justify-center md:items-center md:fixed md:z-20 md:bg-[rgba(255,255,255)]',
+    'md:inset-0 md:flex md:flex-col md:justify-center md:items-center md:fixed md:z-80 md:bg-[rgba(255,255,255)]',
 };
 
 const Navbar = () => {
@@ -59,7 +60,7 @@ const Navbar = () => {
     setSidebar(false);
   };
   return (
-    <div>
+    <div className={styles.main}>
       <header className={styles.header}>
         <div className={styles.logo}>
           <div>
